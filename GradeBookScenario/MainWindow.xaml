@@ -1,0 +1,50 @@
+﻿<Window x:Class="GradeBookScenario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GradeBookScenario"
+        mc:Ignorable="d"
+        Title="Programming Concepts A: Grade Book" Height="400" Width="500" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Thickness x:Key="ButtonMargin">5</Thickness>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="5">
+            <!-- Start Blackboard buttons -->
+            <Button x:Name="newBlackboardButton" Content="New Blackboard" Click="newBlackboardButton_Click"/>
+            <Button x:Name="takeFinalButton_" Content="Take Final" Click="takeFinalButton_Click"/>
+            <Button x:Name="tutorArthurButton_" Content="Tutor Arthur" Click="tutorArthurButton_Click"/>
+            <Button x:Name="takeMidtermButton_" Content="Take Midterm" Click="takeMidtermButton_Click"/>
+            <!-- End Blackboard buttons -->
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </StackPanel.Resources>
+        </StackPanel>
+        <Separator Grid.Column="1">
+            <Separator.LayoutTransform>
+                <RotateTransform Angle="90"/>
+            </Separator.LayoutTransform>
+        </Separator>
+        <StackPanel Grid.Column="2" Margin="5">
+            <!-- Start Canvas buttons -->
+            <!-- End Canvas buttons -->
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="newCanvasButton_" Content="New Canvas" Click="newCanvasButton_Click"/>
+            <Button x:Name="writeFinalPaperButton_" Content="Write Final Paper" Click="writeFinalPaperButton_Click"/>
+            <Button x:Name="tutorSamanthaButton_" Content="Tutor Samantha" Click="tutorSamanthaButton_Click"/>
+            <Button x:Name="writeEassayButton_" Content="Write Midterm Essay" Click="writeEssayButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

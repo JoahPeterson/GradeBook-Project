@@ -1,0 +1,42 @@
+﻿{
+
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "indentation": {
+    },
+    "spacingRules": {
+    },
+    "readabilityRules": {
+    },
+    "orderingRules": {
+      "usingDirectivesPlacement": "preserve"
+    },
+    "namingRules": {
+      "allowedHungarianPrefixes": [
+        "as",
+        "do",
+        "id",
+        "if",
+        "in",
+        "ip",
+        "is",
+        "mx",
+        "my",
+        "no",
+        "on",
+        "to",
+        "ui",
+        "vs",
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "maintainabilityRules": {
+    },
+    "layoutRules": {
+    },
+    "documentationRules": {
+    }
+  }
+}
